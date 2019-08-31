@@ -22,7 +22,5 @@ const testFunc = async function(cb: (retVal: boolean) => void) {
         });
     };
     await getWebsiteContent();
-    console.log(result);
     parseContent();
-    console.log(result);
 };

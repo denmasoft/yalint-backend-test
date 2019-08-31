@@ -20,7 +20,3 @@ const myFunc = function(go: (retVal: boolean) => void): void {
     };
     return a.getName();
 };
-
-myFunc(function(name){
-    console.log(name);
-});

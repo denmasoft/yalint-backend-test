@@ -11,12 +11,15 @@ const myFunc = function(go: (retVal: boolean) => void): void {
         name: "a",
         getName: function() {
             doSomething(
-                function() {
-                    go(a.name == "a");
-                }
+               ()=>{
+               	go(this.name == "a");
+               }
             );
             return this.name;
         },
     };
     return a.getName();
 };
+myFunc(function(elem){
+
+});
